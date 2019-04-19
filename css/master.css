@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+}
+html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body{
+  background-color: rgb(149, 121, 146);
+}
+.marco{
+  width: 100vw;
+  height: 100vh;
+  transform: skewX(10deg);
+}
+.esfera {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(at top left, #bfbfbf 20%, #414141);
+  -ms-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  position:absolute;
+  animation-name: MovimientoPendular;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.Num1{
+  background-color: green;
+  animation-duration: 2s;
+}
+.Num2{
+  background-color: yellow;
+  transform: scale(.9);
+  animation-duration: 1.95s;
+}
+.Num3{
+  background-color: red;
+  transform: scale(.8);
+  animation-duration: 1.9s;
+}
+.Num4{
+  background-color: blue;
+  transform: scale(.7);
+  animation-duration: 1.85s;
+}
+.Num5{
+  background-color: green;
+  transform: scale(.6);
+  animation-duration: 1.8s;
+}
+.Num6{
+  background-color: yellow;
+  transform: scale(.5);
+  animation-duration: 1.75s;
+}
+.Num7{
+  background-color: red;
+  transform: scale(.4);
+  animation-duration: 1.7s;
+}
+.Num8{
+  background-color: blue;
+  transform: scale(.3);
+  animation-duration: 1.65s;
+}
+.Num9{
+  background-color: red;
+  transform: scale(.2);
+  animation-duration: 1.6s;
+}
+.Num10{
+  background-color: blue;
+  transform: scale(.1);
+  animation-duration: 1.55s;
+}
+
+
+@keyframes MovimientoPendular {
+  0%{
+    left: calc(0%);
+    top: 0%;
+  }
+  50%{
+    top: 70%;
+  }
+  100%{
+    top: 0%;
+    left: calc(100% - 200px);
+  }
+}
