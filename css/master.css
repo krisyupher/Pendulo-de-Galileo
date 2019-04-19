@@ -1,94 +1,162 @@
-*{
+* {
   margin: 0;
 }
-html{
+
+html {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-body{
+
+body {
   background-color: rgb(149, 121, 146);
 }
-.marco{
+
+.marco {
   width: 100vw;
   height: 100vh;
-  transform: skewX(10deg);
+  transform-style: preserve-3d;
 }
+
 .esfera {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: radial-gradient(at top left, #bfbfbf 20%, #414141);
   -ms-border-radius: 150px;
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   -o-border-radius: 150px;
   border-radius: 150px;
-  position:absolute;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 50%;
   animation-name: MovimientoPendular;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-.Num1{
+
+.Num1 {
   background-color: green;
   animation-duration: 2s;
 }
-.Num2{
-  background-color: yellow;
-  transform: scale(.9);
+
+.Num2 {
+  transform: translateZ(10px);
+  transform: translateY(-10px);
   animation-duration: 1.95s;
 }
-.Num3{
-  background-color: red;
-  transform: scale(.8);
+
+.Num3 {
+  transform: translateZ(20px);
+  transform: translateY(-20px);
   animation-duration: 1.9s;
 }
-.Num4{
-  background-color: blue;
-  transform: scale(.7);
+
+.Num4 {
+  transform: translateZ(30px);
+  transform: translateY(-30px);
   animation-duration: 1.85s;
 }
-.Num5{
-  background-color: green;
-  transform: scale(.6);
+
+.Num5 {
+  transform: translateZ(40px);
+  transform: translateY(-40px);
   animation-duration: 1.8s;
 }
-.Num6{
-  background-color: yellow;
-  transform: scale(.5);
+
+.Num6 {
+  transform: translateZ(50px);
+  transform: translateY(-50px);
   animation-duration: 1.75s;
 }
-.Num7{
-  background-color: red;
-  transform: scale(.4);
+
+.Num7 {
+  transform: translateZ(60px);
+  transform: translateY(-60px);
   animation-duration: 1.7s;
 }
-.Num8{
-  background-color: blue;
-  transform: scale(.3);
+
+.Num8 {
+  transform: translateZ(70px);
+  transform: translateY(-70px);
   animation-duration: 1.65s;
 }
-.Num9{
-  background-color: red;
-  transform: scale(.2);
+
+.Num9 {
+  transform: translateZ(80px);
+  transform: translateY(-80px);
   animation-duration: 1.6s;
 }
-.Num10{
+
+.Num10 {
   background-color: blue;
-  transform: scale(.1);
+  transform: translateZ(90px);
+  transform: translateY(-90px);
   animation-duration: 1.55s;
 }
-
+.Num11 {
+  transform: translateZ(100px);
+  transform: translateY(-100px);
+  animation-duration: 1.5s;
+}
+.Num12 {
+  transform: translateZ(110px);
+  transform: translateY(-110px);
+  animation-duration: 1.45s;
+}
+.Num13 {
+  transform: translateZ(120px);
+  transform: translateY(-120px);
+  animation-duration: 1.4s;
+}
+.Num14 {
+  transform: translateZ(130px);
+  transform: translateY(-130px);
+  animation-duration: 1.35s;
+}
+.Num15 {
+  transform: translateZ(140px);
+  transform: translateY(-140px);
+  animation-duration: 1.3s;
+}
+.Num16 {
+  transform: translateZ(150px);
+  transform: translateY(-150px);
+  animation-duration: 1.25s;
+}
+.Num17 {
+  transform: translateZ(160px);
+  transform: translateY(-160px);
+  animation-duration: 1.2s;
+}
+.Num18 {
+  transform: translateZ(170px);
+  transform: translateY(-170px);
+  animation-duration: 1.15s;
+}
+.Num19 {
+  transform: translateZ(180px);
+  transform: translateY(-180px);
+  animation-duration: 1.1s;
+}
+.Num20 {
+  transform: translateZ(190px);
+  transform: translateY(-190px);
+  animation-duration: 1.05s;
+}
 
 @keyframes MovimientoPendular {
-  0%{
+  0% {
     left: calc(0%);
-    top: 0%;
+    top: 30%;
   }
-  50%{
-    top: 70%;
+
+  50% {
+    top: 80%;
   }
-  100%{
-    top: 0%;
-    left: calc(100% - 200px);
+
+  100% {
+    top: 30%;
+    left: calc(100% - 100px);
   }
 }
