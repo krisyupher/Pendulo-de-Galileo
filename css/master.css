@@ -18,8 +18,8 @@ body {
 }
 
 .esfera {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: radial-gradient(at top left, #bfbfbf 20%, #414141);
   -ms-border-radius: 150px;
   -moz-border-radius: 150px;
@@ -36,113 +36,93 @@ body {
 }
 
 .Num1 {
-  background-color: green;
+  transform: scale(1.4) translate(0, 0);
   animation-duration: 2s;
 }
 
 .Num2 {
-  transform: translateZ(10px);
-  transform: translateY(-10px);
-  animation-duration: 1.95s;
+  transform: scale(1.38) translate(0, -5px);
+  animation-duration: 1.98s;
 }
 
 .Num3 {
-  transform: translateZ(20px);
-  transform: translateY(-20px);
-  animation-duration: 1.9s;
+  transform: scale(1.36) translate(0, -10px);
+  animation-duration: 1.96s;
 }
 
 .Num4 {
-  transform: translateZ(30px);
-  transform: translateY(-30px);
-  animation-duration: 1.85s;
+  transform: scale(1.34) translate(0, -15px);
+  animation-duration: 1.94s;
 }
 
 .Num5 {
-  transform: translateZ(40px);
-  transform: translateY(-40px);
-  animation-duration: 1.8s;
+  transform: scale(1.32) translate(0, -20px);
+  animation-duration: 1.92s;
 }
 
 .Num6 {
-  transform: translateZ(50px);
-  transform: translateY(-50px);
-  animation-duration: 1.75s;
+  transform: scale(1.3) translate(0, -25px);
+  animation-duration: 1.90s;
 }
 
 .Num7 {
-  transform: translateZ(60px);
-  transform: translateY(-60px);
-  animation-duration: 1.7s;
+  transform: scale(1.28) translate(0, -30px);
+  animation-duration: 1.88s;
 }
 
 .Num8 {
-  transform: translateZ(70px);
-  transform: translateY(-70px);
-  animation-duration: 1.65s;
+  transform: scale(1.26) translate(0, -35px);
+  animation-duration: 1.86s;
 }
 
 .Num9 {
-  transform: translateZ(80px);
-  transform: translateY(-80px);
-  animation-duration: 1.6s;
+  transform: scale(1.24) translate(0, -40px);
+  animation-duration: 1.84s;
 }
 
 .Num10 {
-  background-color: blue;
-  transform: translateZ(90px);
-  transform: translateY(-90px);
-  animation-duration: 1.55s;
+  transform: scale(1.22) translate(0, -45px);
+  animation-duration: 1.82s;
 }
 .Num11 {
-  transform: translateZ(100px);
-  transform: translateY(-100px);
-  animation-duration: 1.5s;
+  transform: scale(1.2) translate(0, -50px);
+  animation-duration: 1.80s;
 }
 .Num12 {
-  transform: translateZ(110px);
-  transform: translateY(-110px);
-  animation-duration: 1.45s;
+  transform: scale(1.18) translate(0, -55px);
+  animation-duration: 1.78s;
 }
 .Num13 {
-  transform: translateZ(120px);
-  transform: translateY(-120px);
-  animation-duration: 1.4s;
+  transform: scale(1.16) translate(0, -60px);
+  animation-duration: 1.76s;
 }
 .Num14 {
-  transform: translateZ(130px);
-  transform: translateY(-130px);
-  animation-duration: 1.35s;
+  transform: scale(1.14) translate(0, -65px);
+  animation-duration: 1.74s;
 }
 .Num15 {
-  transform: translateZ(140px);
-  transform: translateY(-140px);
-  animation-duration: 1.3s;
+  transform: scale(1.12) translate(0, -70px);
+  animation-duration: 1.72s;
 }
 .Num16 {
-  transform: translateZ(150px);
-  transform: translateY(-150px);
-  animation-duration: 1.25s;
+  transform: scale(1.1) translate(0, -75px);
+  animation-duration: 1.70s;
 }
 .Num17 {
-  transform: translateZ(160px);
-  transform: translateY(-160px);
-  animation-duration: 1.2s;
+  transform: scale(1.08) translate(0, -80px);
+  animation-duration: 1.68s;
 }
 .Num18 {
-  transform: translateZ(170px);
-  transform: translateY(-170px);
-  animation-duration: 1.15s;
+  transform: scale(1.06) translate(0, -90px);
+  animation-duration: 1.66s;
 }
 .Num19 {
-  transform: translateZ(180px);
-  transform: translateY(-180px);
-  animation-duration: 1.1s;
+  transform: scale(1.04) translate(0, -95px);
+  animation-duration: 1.64s;
 }
 .Num20 {
-  transform: translateZ(190px);
-  transform: translateY(-190px);
-  animation-duration: 1.05s;
+  transform: scale(1.02) translate(0, -100px);
+  animation-duration: 1.62s;
 }
 
 @keyframes MovimientoPendular {
