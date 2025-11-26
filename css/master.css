@@ -79,201 +79,201 @@ body {
   z-index: 29;
   transform: translateZ(280px);
   animation-duration: 1.98s;
-  --length: 68vh;
+  --length: 69vh;
 }
 
 .Num3 {
   z-index: 28;
   transform: translateZ(270px);
   animation-duration: 1.96s;
-  --length: 66vh;
+  --length: 68vh;
 }
 
 .Num4 {
   z-index: 27;
   transform: translateZ(260px);
   animation-duration: 1.94s;
-  --length: 64vh;
+  --length: 67vh;
 }
 
 .Num5 {
   z-index: 26;
   transform: translateZ(250px);
   animation-duration: 1.92s;
-  --length: 62vh;
+  --length: 66vh;
 }
 
 .Num6 {
   z-index: 25;
   transform: translateZ(240px);
   animation-duration: 1.90s;
-  --length: 60vh;
+  --length: 65vh;
 }
 
 .Num7 {
   z-index: 24;
   transform: translateZ(230px);
   animation-duration: 1.88s;
-  --length: 58vh;
+  --length: 64vh;
 }
 
 .Num8 {
   z-index: 23;
   transform: translateZ(220px);
   animation-duration: 1.86s;
-  --length: 56vh;
+  --length: 63vh;
 }
 
 .Num9 {
   z-index: 22;
   transform: translateZ(210px);
   animation-duration: 1.84s;
-  --length: 54vh;
+  --length: 62vh;
 }
 
 .Num10 {
   z-index: 21;
   transform: translateZ(200px);
   animation-duration: 1.82s;
-  --length: 52vh;
+  --length: 61vh;
 }
 
 .Num11 {
   z-index: 20;
   transform: translateZ(190px);
   animation-duration: 1.80s;
-  --length: 50vh;
+  --length: 60vh;
 }
 
 .Num12 {
   z-index: 19;
   transform: translateZ(180px);
   animation-duration: 1.78s;
-  --length: 48vh;
+  --length: 59vh;
 }
 
 .Num13 {
   z-index: 18;
   transform: translateZ(170px);
   animation-duration: 1.76s;
-  --length: 46vh;
+  --length: 58vh;
 }
 
 .Num14 {
   z-index: 17;
   transform: translateZ(160px);
   animation-duration: 1.74s;
-  --length: 44vh;
+  --length: 57vh;
 }
 
 .Num15 {
   z-index: 16;
   transform: translateZ(150px);
   animation-duration: 1.72s;
-  --length: 42vh;
+  --length: 56vh;
 }
 
 .Num16 {
   z-index: 15;
   transform: translateZ(140px);
   animation-duration: 1.70s;
-  --length: 40vh;
+  --length: 55vh;
 }
 
 .Num17 {
   z-index: 14;
   transform: translateZ(130px);
   animation-duration: 1.68s;
-  --length: 38vh;
+  --length: 54vh;
 }
 
 .Num18 {
   z-index: 13;
   transform: translateZ(120px);
   animation-duration: 1.66s;
-  --length: 36vh;
+  --length: 53vh;
 }
 
 .Num19 {
   z-index: 12;
   transform: translateZ(110px);
   animation-duration: 1.64s;
-  --length: 34vh;
+  --length: 52vh;
 }
 
 .Num20 {
   z-index: 11;
   transform: translateZ(100px);
   animation-duration: 1.62s;
-  --length: 32vh;
+  --length: 51vh;
 }
 
 .Num21 {
   z-index: 10;
   transform: translateZ(90px);
   animation-duration: 1.60s;
-  --length: 30vh;
+  --length: 50vh;
 }
 
 .Num22 {
   z-index: 9;
   transform: translateZ(80px);
   animation-duration: 1.58s;
-  --length: 28vh;
+  --length: 49vh;
 }
 
 .Num23 {
   z-index: 8;
   transform: translateZ(70px);
   animation-duration: 1.56s;
-  --length: 26vh;
+  --length: 48vh;
 }
 
 .Num24 {
   z-index: 7;
   transform: translateZ(60px);
   animation-duration: 1.54s;
-  --length: 24vh;
+  --length: 47vh;
 }
 
 .Num25 {
   z-index: 6;
   transform: translateZ(50px);
   animation-duration: 1.52s;
-  --length: 22vh;
+  --length: 46vh;
 }
 
 .Num26 {
   z-index: 5;
   transform: translateZ(40px);
   animation-duration: 1.50s;
-  --length: 20vh;
+  --length: 45vh;
 }
 
 .Num27 {
   z-index: 4;
   transform: translateZ(30px);
   animation-duration: 1.48s;
-  --length: 18vh;
+  --length: 44vh;
 }
 
 .Num28 {
   z-index: 3;
   transform: translateZ(20px);
   animation-duration: 1.46s;
-  --length: 16vh;
+  --length: 43vh;
 }
 
 .Num29 {
   z-index: 2;
   transform: translateZ(10px);
   animation-duration: 1.44s;
-  --length: 14vh;
+  --length: 42vh;
 }
 
 .Num30 {
   z-index: 1;
   transform: translateZ(0px);
   animation-duration: 1.42s;
-  --length: 12vh;
+  --length: 41vh;
 }
