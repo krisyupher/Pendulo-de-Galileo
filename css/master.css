@@ -1,142 +1,279 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
+html,
 body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background-color: rgb(149, 121, 146);
 }
 
 .marco {
   width: 100vw;
   height: 100vh;
-  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
 }
 
-.esfera {
-  width: 80px;
-  height: 80px;
-  background: radial-gradient(at top left, #bfbfbf 20%, #414141);
-  -ms-border-radius: 150px;
-  -moz-border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -o-border-radius: 150px;
-  border-radius: 150px;
+.pendulum-container {
   position: absolute;
-  left: calc(50% - 50px);
-  top: 50%;
-  animation-name: MovimientoPendular;
+  top: 0;
+  left: 50%;
+  transform-origin: top center;
+  margin-left: -1.5px;
+}
+
+.pendulum-rod {
+  position: relative;
+  width: 3px;
+  height: var(--length);
+  transform-origin: top center;
+  animation-name: Swing;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-duration: inherit;
 }
 
-.Num1 {
-  transform: scale(1.4) translate(0, 0);
-  animation-duration: 2s;
+.rope {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
-.Num2 {
-  transform: scale(1.38) translate(0, -5px);
-  animation-duration: 1.98s;
+.esfera {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(at 30% 30%, #e0e0e0, #303030);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25px;
+  left: -23.5px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
-.Num3 {
-  transform: scale(1.36) translate(0, -10px);
-  animation-duration: 1.96s;
-}
-
-.Num4 {
-  transform: scale(1.34) translate(0, -15px);
-  animation-duration: 1.94s;
-}
-
-.Num5 {
-  transform: scale(1.32) translate(0, -20px);
-  animation-duration: 1.92s;
-}
-
-.Num6 {
-  transform: scale(1.3) translate(0, -25px);
-  animation-duration: 1.90s;
-}
-
-.Num7 {
-  transform: scale(1.28) translate(0, -30px);
-  animation-duration: 1.88s;
-}
-
-.Num8 {
-  transform: scale(1.26) translate(0, -35px);
-  animation-duration: 1.86s;
-}
-
-.Num9 {
-  transform: scale(1.24) translate(0, -40px);
-  animation-duration: 1.84s;
-}
-
-.Num10 {
-  transform: scale(1.22) translate(0, -45px);
-  animation-duration: 1.82s;
-}
-.Num11 {
-  transform: scale(1.2) translate(0, -50px);
-  animation-duration: 1.80s;
-}
-.Num12 {
-  transform: scale(1.18) translate(0, -55px);
-  animation-duration: 1.78s;
-}
-.Num13 {
-  transform: scale(1.16) translate(0, -60px);
-  animation-duration: 1.76s;
-}
-.Num14 {
-  transform: scale(1.14) translate(0, -65px);
-  animation-duration: 1.74s;
-}
-.Num15 {
-  transform: scale(1.12) translate(0, -70px);
-  animation-duration: 1.72s;
-}
-.Num16 {
-  transform: scale(1.1) translate(0, -75px);
-  animation-duration: 1.70s;
-}
-.Num17 {
-  transform: scale(1.08) translate(0, -80px);
-  animation-duration: 1.68s;
-}
-.Num18 {
-  transform: scale(1.06) translate(0, -90px);
-  animation-duration: 1.66s;
-}
-.Num19 {
-  transform: scale(1.04) translate(0, -95px);
-  animation-duration: 1.64s;
-}
-.Num20 {
-  transform: scale(1.02) translate(0, -100px);
-  animation-duration: 1.62s;
-}
-
-@keyframes MovimientoPendular {
+@keyframes Swing {
   0% {
-    left: calc(0%);
-    top: 30%;
-  }
-
-  50% {
-    top: 80%;
+    transform: rotate(45deg);
   }
 
   100% {
-    top: 30%;
-    left: calc(100% - 100px);
+    transform: rotate(-45deg);
   }
+}
+
+.Num1 {
+  z-index: 30;
+  transform: translateZ(290px);
+  animation-duration: 2s;
+  --length: 70vh;
+}
+
+.Num2 {
+  z-index: 29;
+  transform: translateZ(280px);
+  animation-duration: 1.98s;
+  --length: 68vh;
+}
+
+.Num3 {
+  z-index: 28;
+  transform: translateZ(270px);
+  animation-duration: 1.96s;
+  --length: 66vh;
+}
+
+.Num4 {
+  z-index: 27;
+  transform: translateZ(260px);
+  animation-duration: 1.94s;
+  --length: 64vh;
+}
+
+.Num5 {
+  z-index: 26;
+  transform: translateZ(250px);
+  animation-duration: 1.92s;
+  --length: 62vh;
+}
+
+.Num6 {
+  z-index: 25;
+  transform: translateZ(240px);
+  animation-duration: 1.90s;
+  --length: 60vh;
+}
+
+.Num7 {
+  z-index: 24;
+  transform: translateZ(230px);
+  animation-duration: 1.88s;
+  --length: 58vh;
+}
+
+.Num8 {
+  z-index: 23;
+  transform: translateZ(220px);
+  animation-duration: 1.86s;
+  --length: 56vh;
+}
+
+.Num9 {
+  z-index: 22;
+  transform: translateZ(210px);
+  animation-duration: 1.84s;
+  --length: 54vh;
+}
+
+.Num10 {
+  z-index: 21;
+  transform: translateZ(200px);
+  animation-duration: 1.82s;
+  --length: 52vh;
+}
+
+.Num11 {
+  z-index: 20;
+  transform: translateZ(190px);
+  animation-duration: 1.80s;
+  --length: 50vh;
+}
+
+.Num12 {
+  z-index: 19;
+  transform: translateZ(180px);
+  animation-duration: 1.78s;
+  --length: 48vh;
+}
+
+.Num13 {
+  z-index: 18;
+  transform: translateZ(170px);
+  animation-duration: 1.76s;
+  --length: 46vh;
+}
+
+.Num14 {
+  z-index: 17;
+  transform: translateZ(160px);
+  animation-duration: 1.74s;
+  --length: 44vh;
+}
+
+.Num15 {
+  z-index: 16;
+  transform: translateZ(150px);
+  animation-duration: 1.72s;
+  --length: 42vh;
+}
+
+.Num16 {
+  z-index: 15;
+  transform: translateZ(140px);
+  animation-duration: 1.70s;
+  --length: 40vh;
+}
+
+.Num17 {
+  z-index: 14;
+  transform: translateZ(130px);
+  animation-duration: 1.68s;
+  --length: 38vh;
+}
+
+.Num18 {
+  z-index: 13;
+  transform: translateZ(120px);
+  animation-duration: 1.66s;
+  --length: 36vh;
+}
+
+.Num19 {
+  z-index: 12;
+  transform: translateZ(110px);
+  animation-duration: 1.64s;
+  --length: 34vh;
+}
+
+.Num20 {
+  z-index: 11;
+  transform: translateZ(100px);
+  animation-duration: 1.62s;
+  --length: 32vh;
+}
+
+.Num21 {
+  z-index: 10;
+  transform: translateZ(90px);
+  animation-duration: 1.60s;
+  --length: 30vh;
+}
+
+.Num22 {
+  z-index: 9;
+  transform: translateZ(80px);
+  animation-duration: 1.58s;
+  --length: 28vh;
+}
+
+.Num23 {
+  z-index: 8;
+  transform: translateZ(70px);
+  animation-duration: 1.56s;
+  --length: 26vh;
+}
+
+.Num24 {
+  z-index: 7;
+  transform: translateZ(60px);
+  animation-duration: 1.54s;
+  --length: 24vh;
+}
+
+.Num25 {
+  z-index: 6;
+  transform: translateZ(50px);
+  animation-duration: 1.52s;
+  --length: 22vh;
+}
+
+.Num26 {
+  z-index: 5;
+  transform: translateZ(40px);
+  animation-duration: 1.50s;
+  --length: 20vh;
+}
+
+.Num27 {
+  z-index: 4;
+  transform: translateZ(30px);
+  animation-duration: 1.48s;
+  --length: 18vh;
+}
+
+.Num28 {
+  z-index: 3;
+  transform: translateZ(20px);
+  animation-duration: 1.46s;
+  --length: 16vh;
+}
+
+.Num29 {
+  z-index: 2;
+  transform: translateZ(10px);
+  animation-duration: 1.44s;
+  --length: 14vh;
+}
+
+.Num30 {
+  z-index: 1;
+  transform: translateZ(0px);
+  animation-duration: 1.42s;
+  --length: 12vh;
 }
