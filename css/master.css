@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgb(149, 121, 146);
+  background: linear-gradient(to bottom, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%);
 }
 
 .marco {
@@ -18,6 +18,19 @@ body {
   display: flex;
   justify-content: center;
   perspective: 1000px;
+  overflow: hidden;
+}
+
+/* Add reflection surface */
+.marco::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
 }
 
 .pendulum-container {
@@ -38,24 +51,49 @@ body {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-duration: inherit;
+  filter: drop-shadow(0 0 1px rgba(255, 200, 150, 0.2));
 }
 
 .rope {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 200, 150, 0.2));
+  box-shadow: 0 0 2px rgba(255, 200, 150, 0.3);
 }
 
 .esfera {
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(at 30% 30%, #e0e0e0, #303030);
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 35% 35%, #fff5e6, #ffb347 30%, #ff8c42 60%, #d96b2a);
   border-radius: 50%;
   position: absolute;
-  bottom: -25px;
-  left: -23.5px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  bottom: -30px;
+  left: -28.5px;
+  box-shadow:
+    0 0 15px 4px rgba(255, 140, 66, 0.5),
+    0 0 30px 8px rgba(255, 140, 66, 0.3),
+    0 0 45px 12px rgba(255, 140, 66, 0.15),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.3),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Add reflection to each sphere */
+.esfera::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff5e6, #ffb347 30%, #ff8c42 60%, #d96b2a);
+  top: 200%;
+  left: 0;
+  opacity: 0.3;
+  filter: blur(8px);
+  transform: scaleY(-0.6);
+  box-shadow:
+    0 0 10px 3px rgba(255, 140, 66, 0.3),
+    0 0 20px 6px rgba(255, 140, 66, 0.15);
 }
 
 @keyframes Swing {
